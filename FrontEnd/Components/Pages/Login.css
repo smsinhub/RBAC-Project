@@ -1,0 +1,189 @@
+/* General container styling */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header .line {
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Input fields styling */
+.inputs {
+    margin-top: 20px;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input input:focus {
+    border-color: #007bff;
+}
+
+/* Submit button container */
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.submit {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.submit.gray {
+    background-color: #ccc;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+.submit.gray:hover {
+    background-color: #ccc;
+}
+
+/* Final submit button */
+.final-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.final-submit:hover {
+    background-color: #218838;
+}
+.result {
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin: 20px auto; /* Center the element */
+    width: 80%; /* Adjust width */
+    max-width: 600px; /* Maximum width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.result h1,
+.result h2 {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    margin: 10px 0; /* Vertical spacing between elements */
+    color: #333; /* Dark gray text color */
+}
+
+.result h1 {
+    font-size: 1.8rem; /* Larger size for the title */
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50; /* Darker shade for emphasis */
+}
+
+.result h2 {
+    font-size: 1.2rem; /* Slightly smaller for details */
+    font-weight: normal;
+}
+
+.result p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #d9534f; /* Red for fail message */
+}
+
+.result div {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.result div p {
+    font-weight: bold;
+    color: #5cb85c; 
+}
+
+
+@media (max-width: 768px) {
+    .result {
+        width: 95%; 
+        padding: 15px;
+    }
+
+    .result h1 {
+        font-size: 1.5rem;
+    }
+
+    .result h2 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsive styling */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header .text {
+        font-size: 20px;
+    }
+
+    .submit {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .final-submit {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

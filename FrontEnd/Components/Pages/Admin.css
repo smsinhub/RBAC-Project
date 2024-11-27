@@ -1,0 +1,217 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.containers {
+    margin-top: 0%;
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Search Bar Styling */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input[type='search'] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search .btn:hover {
+    background-color: #4d95d7;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.table th, 
+.table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.table td {
+    color: #555;
+}
+
+.table .editbtn {
+    background-color: #28a70f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.table .deletebtn {
+    background-color: #f25424;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.table .editbtn:hover {
+    background-color: #34d737;
+}
+.table .deletebtn:hover {
+    background-color: #d8663d;
+}
+/* Base styling for the modal */
+.record {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures the modal is above other content */
+}
+
+/* Styling the content area of the modal */
+.recordcontent {
+    background-color: #fff; /* White background for content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative; /* For positioning the close button */
+    text-align: center; /* Center align text */
+}
+
+/* Styling the heading */
+.recordcontent h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling input fields */
+.recordcontent input {
+    width: calc(100% - 20px); /* Ensure input fields take full width minus padding */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling the button */
+.recordcontent button {
+    background-color: #4caf50; /* Green background */
+    color: #fff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.recordcontent button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000; /* Black color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .recordcontent {
+        width: 90%; /* Reduce modal width */
+    }
+
+    .recordcontent h1 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    .recordcontent button {
+        font-size: 14px; /* Smaller button font */
+    }
+}
+
+@media (max-width: 600px) {
+    .search input[type='search'] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table th, 
+    .table td {
+        font-size: 14px;
+    }
+
+    .table .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
