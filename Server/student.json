@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "Abiram",
+    "dob": "11/12/2002",
+    "dept": "CSE",
+    "marks": 60
+  },
+  {
+    "id": 2,
+    "name": "Balaji",
+    "dob": "10/02/2001",
+    "dept": "ECE",
+    "marks": 57
+  },
+  {
+    "id": 3,
+    "name": "Doss",
+    "dob": "06/05/2002",
+    "dept": "CSE",
+    "marks": 75
+  },
+  {
+    "id": 4,
+    "name": "Hari",
+    "dob": "11/03/2002",
+    "dept": "EEE",
+    "marks": 98
+  },
+  {
+    "id": 5,
+    "name": "Joseph",
+    "dob": "31/12/2001",
+    "dept": "MECH",
+    "marks": 83
+  },
+  {
+    "id": 6,
+    "name": "Mohamadullah",
+    "dob": "18/06/2002",
+    "dept": "CSE",
+    "marks": 81
+  },
+  {
+    "id": 7,
+    "name": "Nagarajan",
+    "dob": "07/07/2002",
+    "dept": "CIVIL",
+    "marks": 39
+  },
+  {
+    "id": 9,
+    "name": "PaulRaj",
+    "dob": "11/11/2002",
+    "dept": "EEE",
+    "marks": 30
+  },
+  {
+    "id": 10,
+    "name": "Rahul",
+    "dob": "01/09/2001",
+    "dept": "CSE",
+    "marks": 22
+  },
+  {
+    "id": 1732639516750,
+    "name": "Sundaram",
+    "dept": "CSE",
+    "dob": "13-9-23",
+    "marks": "56"
+  },
+  {
+    "id": 1732692900832,
+    "name": "Ram",
+    "dept": "Mech",
+    "dob": "13-1-23",
+    "marks": "45"
+  },
+  {
+    "id": 1732719383539,
+    "name": "siva",
+    "dept": "Cse",
+    "dob": "13-5-2002",
+    "marks": "23"
+  },
+  {
+    "id": 1732719886613,
+    "name": "Gopi",
+    "dept": "EEE",
+    "dob": "15-8-2001",
+    "marks": "100"
+  }
+]
